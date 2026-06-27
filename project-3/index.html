@@ -17,7 +17,12 @@
             --border-line: #262626;
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: var(--bg-dark);
@@ -26,44 +31,127 @@
             padding-bottom: 3rem;
         }
 
-        .container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
-        
-        header { padding: 4rem 0 2rem 0; border-bottom: 1px solid var(--border-line); margin-bottom: 2.5rem; }
-        .profile-name { font-size: 3rem; font-weight: 900; letter-spacing: -1px; margin-bottom: 0.5rem; }
-        .profile-name span { color: var(--accent-amber); }
-        .profile-track { font-size: 1.1rem; color: var(--text-dim); font-weight: 500; }
-
-        section { margin-bottom: 3rem; }
-        .section-heading {
-            font-size: 1.2rem; font-weight: 800; margin-bottom: 1.5rem;
-            text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; gap: 0.5rem;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
         }
-        .section-heading::after { content: ''; flex-grow: 1; height: 1px; background: var(--border-line); }
 
-        .stack-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem; }
-        .stack-card { background: var(--bg-card); border: 1px solid var(--border-line); border-radius: 8px; padding: 1.25rem; }
-        .stack-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
-        .stack-card h3::before { content: '// '; color: var(--accent-amber); }
+        header {
+            padding: 4rem 0 2rem 0;
+            border-bottom: 1px solid var(--border-line);
+            margin-bottom: 2.5rem;
+        }
 
-        .pill-box { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
-        .pill { background: #1c1c21; border: 1px solid #2e2e33; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+        .profile-name {
+            font-size: 3rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-name span {
+            color: var(--accent-amber);
+        }
+
+        .profile-track {
+            font-size: 1.1rem;
+            color: var(--text-dim);
+            font-weight: 500;
+        }
+
+        /* Styling for the About Me link */
+        .about-link {
+            color: var(--accent-amber);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            display: inline-block;
+            transition: color 0.2s;
+        }
+
+        .about-link:hover {
+            color: var(--accent-orange);
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .section-heading {
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-heading::after {
+            content: '';
+            flex-grow: 1;
+            height: 1px;
+            background: var(--border-line);
+        }
+
+        .stack-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .stack-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-line);
+            border-radius: 8px;
+            padding: 1.25rem;
+        }
+
+        .stack-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .stack-card h3::before {
+            content: '// ';
+            color: var(--accent-amber);
+        }
+
+        .pill-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-top: 0.5rem;
+        }
+
+        .pill {
+            background: #1c1c21;
+            border: 1px solid #2e2e33;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
-
     <div class="container">
-        
         <!-- Header Section -->
         <header>
             <h1 class="profile-name">Vijayalakshmi <span>.</span></h1>
             <div class="profile-track">Artificial Front-End Engineering Student</div>
+            <!-- The new Link connecting to your biography -->
+            <a href="about.html" class="about-link">// Learn More About Me</a>
         </header>
 
         <!-- Technical Capabilities -->
         <section>
             <h2 class="section-heading">Skills & Milestones</h2>
             <div class="stack-grid">
-                
                 <div class="stack-card">
                     <h3>Core Environments</h3>
                     <div class="pill-box">
@@ -71,7 +159,6 @@
                         <span class="pill">C Language</span>
                     </div>
                 </div>
-
                 <div class="stack-card">
                     <h3>Front-End</h3>
                     <div class="pill-box">
@@ -79,7 +166,6 @@
                         <span class="pill">CSS Styles</span>
                     </div>
                 </div>
-
                 <div class="stack-card">
                     <h3>Course Projects</h3>
                     <div class="pill-box">
@@ -88,11 +174,8 @@
                         <span class="pill">Project 3</span>
                     </div>
                 </div>
-
             </div>
         </section>
-
     </div>
-
 </body>
 </html>
