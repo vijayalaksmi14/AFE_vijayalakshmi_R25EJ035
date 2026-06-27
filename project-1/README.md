@@ -4,7 +4,7 @@
 To create a GitHub account, create a repository, and perform the first code commit.
 
 ## Repository Name
-`AFE_DeshnaSaanvi_R25EJ027`
+`AFE_vijayalakshmi_R25EJO35
 
 ## Steps Performed
 1. Created a GitHub account.
