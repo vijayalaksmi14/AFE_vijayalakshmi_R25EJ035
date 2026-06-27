@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech & AI News Lounge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+        nav {
+            background-color: #111;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .news-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+        .news-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .news-content { padding: 1.5rem; }
+        .news-tag {
+            background-color: #e74c3c;
+            color: white;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+        .news-title { margin: 0 0 0.5rem 0; font-size: 1.25rem; color: #222; }
+        .news-desc { color: #666; font-size: 0.95rem; line-height: 1.4; }
+    </style>
+</head>
+<body>
+
+    <nav>📰 Global Tech News Hub</nav>
+
+    <div class="news-container">
+        <!-- Article 1 -->
+        <div class="news-card">
+            <div class="news-content">
+                <span class="news-tag">Artificial Intelligence</span>
+                <h3 class="news-title">Meta Releases Llama 3.1 Open Weights Model</h3>
+                <p class="news-desc">The community celebrates the debut of Llama 3.1 8B, providing state-of-the-art multilingual and context capabilities directly to open-source software developers globally.</p>
+            </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="news-card">
+            <div class="news-content">
+                <span class="news-tag">Web Dev</span>
+                <h3 class="news-title">Framework Ecosystem Trends in Modern Engineering</h3>
+                <p class="news-desc">Application Framework Engineering styles continue to shift toward lightning-fast edge deployment architectures, empowering single-page applications to load seamlessly.</p>
+            </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="news-card">
+            <div class="news-content">
+                <span class="news-tag">Open Source</span>
+                <h3 class="news-title">GitHub Actions Redefines Automation Routines</h3>
+                <p class="news-desc">New enhancements to standard CI/CD workflows make it effortless for beginner student developers to code, test, and instantly update live web layouts directly from commits.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
